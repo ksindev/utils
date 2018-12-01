@@ -70,3 +70,24 @@ foreach (generateFirstHundreadPrimeNumbers() as $number) {
 
 //PHP functional programming
 // array_pop, array_reduce, array_map
+
+//Nullable Types - 
+//Type declarations for parameters and return values can now be marked as nullable 
+//by prefixing the type name with a question mark
+
+
+//Symmetric array destructuring
+//The shorthand array syntax ([]) may now be used to destructure arrays for assignments
+//like the list() syntax
+
+var_dump("ABCDFGH"[2]);
+var_dump("ABCDFGH"[-2]);
+
+if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    echo "this is a get request\n";
+    print_r($_GET);
+} elseif($_SERVER['REQUEST_METHOD'] == 'PUT') {
+    echo "this is a put request\n";
+    parse_str(file_get_contents("php://input"), $put_vars);
+    print_r($put_vars);
+}
